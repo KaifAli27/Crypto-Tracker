@@ -7,6 +7,22 @@ const Home = () => {
 
   const {allCoin, currency} = useContext(CoinContext);
   const [displayCoin, setDisplayCoin] = useState([]);
+  const [input, setInput] = useState('');
+
+  const InputHandler = (event) => {
+    setInput(event.target.value);
+    if(event.target.value === ""){
+      setDisplayCoin(allCoin)
+    }
+  }
+
+  const searchHandler = async (event) => {
+    event.preventDefault();
+    const coins = await allCoin.filter((item) => {
+      return item.name.toLowerCase().includes(input.toLowerCase())
+    })
+    setDisplayCoin(coins)
+  }
 
   useEffect(()=>{
     setDisplayCoin(allCoin);
@@ -19,8 +35,8 @@ const Home = () => {
       <p>
         Welcome to my cryptocurrency tracker. Navigate to the What-If page to see what you missed out on by not investing earlier.
       </p>
-      <form>
-        <input type="text" placeholder='Search Altcoin..' />
+      <form onSubmit={searchHandler}>
+        <input onChange={InputHandler} value={input} type="text" placeholder='Search Altcoin..' required />
         <button type='submit'>Search</button>
       </form>
       </div>
