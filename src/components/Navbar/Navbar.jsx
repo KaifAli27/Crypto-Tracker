@@ -35,7 +35,7 @@ const Navbar = () => {
         <Link to={`/`}><img src={logo} alt='logo' className='logo'/></Link>
         <ul>
             <Link to={`/`}><li>Home</li></Link>
-            <li>What-If</li>
+            <Link to={`/Whatif`}><li>What-If</li></Link>
             <li>Features</li>
             <li>Pricing</li>
          </ul>
