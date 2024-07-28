@@ -1,0 +1,31 @@
+.spinner2 {
+    display: grid;
+    place-self: center;
+    min-height: 80vh;
+}
+.spin2 {
+    width: 85px;
+    height: 85px;
+    place-self: center;
+    border: 5px solid black;
+    border-top-color: #009fff;
+    border-radius: 50%;
+    animation: rotate 2s infinite;
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.what{
+    text-align: center;
+    padding: 30px;
+
+}
+.what p{
+    padding-top: 10px;
+    font-size: 20px;
+}
+.what h1{
+    font-size: 45px;
+}
