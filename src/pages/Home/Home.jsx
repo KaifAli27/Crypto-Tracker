@@ -2,10 +2,12 @@ import React, { useContext, useEffect, useState } from 'react'
 import './Home.css'
 import { CoinContext } from '../../context/CoinContext'
 import { Link } from 'react-router-dom'
-
+import News from '../../components/News/News'
 
 
 const Home = () => {
+
+  
 
   const {allCoin, currency} = useContext(CoinContext);
   const [displayCoin, setDisplayCoin] = useState([]);
@@ -31,11 +33,14 @@ const Home = () => {
   }, [allCoin])
 
   return (
+    
     <div className='Home'>
+      <News/>
       <div className='hero'>
       <h1>CoinPulse</h1>
       <p>
-        Welcome to my cryptocurrency tracker. Navigate to the What-If page to see what you missed out on by not investing earlier.
+        Track. Analyze. Dominate.<br/>
+Your all-in-one crypto dashboard for live prices, portfolio gains, and smart investing moves.
       </p>
       <form onSubmit={searchHandler}>
         <input onChange={InputHandler} value={input} type="text" placeholder='Search Altcoin..' required />

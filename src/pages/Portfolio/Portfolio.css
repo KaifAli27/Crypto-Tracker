@@ -1,0 +1,158 @@
+.portfolio-page {
+  padding: 2rem 3rem;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  background: transparent;
+  min-height: 100vh;
+}
+
+.portfolio-page h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.portfolio-name-input {
+  width: 300px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 2rem;
+  font-size: 16px;
+}
+
+.add-coin-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.add-coin-form select,
+.add-coin-form input {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  min-width: 160px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.add-coin-form button {
+  padding: 10px 18px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-coin-form button:hover {
+  background-color: #1976d2;
+}
+
+.portfolio-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 3rem;
+  overflow-x: auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.portfolio-table thead {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-table th,
+.portfolio-table td {
+  padding: 14px 18px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.portfolio-table th {
+  font-weight: 700;
+  color: #ccc;
+}
+
+.portfolio-table td {
+  color: white;
+}
+
+.portfolio-table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.portfolio-chart {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .portfolio-page {
+    padding: 1.5rem;
+  }
+
+  .add-coin-form {
+    flex-direction: column;
+  }
+
+  .portfolio-chart {
+    width: 100%;
+  }
+
+  .portfolio-name-input {
+    width: 100%;
+  }
+
+  .portfolio-table {
+    font-size: 12px;
+  }
+}
+
+.coin-search-wrapper {
+  position: relative;
+  min-width: 160px;
+}
+
+.crypto-search-input {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  color: #333;
+  width: 100%;
+}
+
+.coin-dropdown {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  right: 0;
+  background-color: #222;
+  border: 1px solid #444;
+  border-radius: 8px;
+  z-index: 1000;
+  max-height: 180px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.coin-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  border-bottom: 1px solid #333;
+}
+
+.coin-dropdown li:hover {
+  background-color: #444;
+}
+
