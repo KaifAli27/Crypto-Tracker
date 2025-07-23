@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import './Home.css'
 import { CoinContext } from '../../context/CoinContext'
 import { Link } from 'react-router-dom'
-import News from '../../components/News/News'
+import news from '../../assets/newsfeed.png'
 
 
 const Home = () => {
@@ -35,7 +35,7 @@ const Home = () => {
   return (
     
     <div className='Home'>
-      <News/>
+      <img src={news} alt='news' className='newsfeed'/>
       <div className='hero'>
       <h1>CoinPulse</h1>
       <p>

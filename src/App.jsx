@@ -6,7 +6,7 @@ import Coin from './pages/Coin/Coin'
 import Footer from './components/Footer/Footer'
 import Whatif from './pages/What-If/Whatif'
 import Portfolio from './pages/Portfolio/Portfolio'
-import News from './components/News/News'
+
 
 const App = () => {
   return (
