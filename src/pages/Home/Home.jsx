@@ -4,6 +4,7 @@ import { CoinContext } from '../../context/CoinContext'
 import { Link } from 'react-router-dom'
 
 
+
 const Home = () => {
 
   const {allCoin, currency} = useContext(CoinContext);
@@ -32,7 +33,7 @@ const Home = () => {
   return (
     <div className='Home'>
       <div className='hero'>
-      <h1>Kaif's <br/>Crypto Tracker</h1>
+      <h1>CoinPulse</h1>
       <p>
         Welcome to my cryptocurrency tracker. Navigate to the What-If page to see what you missed out on by not investing earlier.
       </p>

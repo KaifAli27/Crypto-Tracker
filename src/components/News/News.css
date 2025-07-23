@@ -1,0 +1,96 @@
+.news-wrapper {
+  padding: 8px 32px;
+  backdrop-filter: blur(4px);
+  background: transparent;
+  color: white;
+}
+
+.news-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  padding-left: 8px;
+}
+
+.news-bar {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.news-item {
+  min-width: 220px;
+  max-width: 240px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-item:hover {
+  transform: scale(1.02);
+}
+
+.news-item img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.news-details {
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-details h4 {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  line-height: 1.25;
+  max-height: 36px;
+  overflow: hidden;
+}
+
+.news-details p {
+  font-size: 10px;
+  color: #ccc;
+  margin: 0;
+}
+
+.news-bar::-webkit-scrollbar {
+  height: 8px;              
+}
+
+.news-bar::-webkit-scrollbar-track {
+  background: transparent;  
+}
+
+.news-bar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3); 
+  border-radius: 10px;     
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: background 0.3s ease;
+}
+
+.news-bar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);  
+}
+
+.news-bar {
+  scrollbar-width: thin;                 
+  scrollbar-color: rgba(255,255,255,0.3) transparent;
+}
+
+

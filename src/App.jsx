@@ -5,16 +5,21 @@ import Home from './pages/Home/Home'
 import Coin from './pages/Coin/Coin'
 import Footer from './components/Footer/Footer'
 import Whatif from './pages/What-If/Whatif'
+import Portfolio from './pages/Portfolio/Portfolio'
+import News from './components/News/News'
 
 const App = () => {
   return (
     <div className='app'>
       <Navbar/>
+      <News/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/coin/:coinId' element={<Coin/>}/>
         <Route path='/whatif' element={<Whatif/>}/>
+        <Route path='/portfolio' element={<Portfolio/>}/>
       </Routes>
+      
       <Footer/>
       
     </div>
